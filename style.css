@@ -62,7 +62,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 p {
@@ -87,7 +87,7 @@ p {
   margin-top: 1rem;
 }
 
-/* Specific */
+/* Header */
 
 .headshot {
   margin: auto;
@@ -116,4 +116,59 @@ p {
 
 .about-container h2 {
   text-align: center;
+}
+
+.tablet-heading {
+  display: none;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .about-container {
+    border: solid 1px gray;
+    padding: 1rem;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    background-color: white;
+  }
+
+  .about-container .flex-row {
+    justify-content: end;
+  }
+
+  .responsive-header {
+    position: relative;
+  }
+
+  .container {
+    padding: 3rem;
+  }
+
+  .headshot {
+    position: absolute;
+    width: 300px;
+    top: -20px;
+    left: -20px;
+  }
+
+  .headshot h1 {
+    display: none;
+  }
+
+  .tablet-heading {
+    display: block;
+    color: white;
+    text-align: right;
+    padding-right: .5rem;
+    z-index: 5;
+  }
+
+  .float-div {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 280px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 900px) {
 }
