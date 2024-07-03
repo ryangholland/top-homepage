@@ -196,3 +196,48 @@ p {
     justify-content: end;
   }
 }
+
+/* My work section */
+
+.project-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, 325px);
+  margin-top: 1rem;
+}
+
+.project-card {
+  border: solid 1px gray;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project-screenshot {
+  height: 200px;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.project-screenshot p {
+  font-size: 2rem;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info > .flex-row {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1150px) {
+  .project-grid {
+    justify-content: center;
+  }
+
+  .project-heading {
+    text-align: center;
+  }
+}
+
